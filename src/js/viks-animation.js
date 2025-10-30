@@ -100,10 +100,10 @@ class Detector {
     this._isTabletCache = null;
   }
 
-  /**
-   * Modern mobile detection using multiple signals
-   * More reliable than regex-only approach
-   */
+/* **********************************************************
+    Modern mobile detection using multiple signals
+    More reliable than regex-only approach
+* **********************************************************/
   mobile() {
     if (this._isMobileCache !== null) {
       return this._isMobileCache;
@@ -139,10 +139,10 @@ class Detector {
     return this._isMobileCache;
   }
 
-  /**
-   * Phone detection (smaller mobile devices)
-   * Distinguishes phones from tablets
-   */
+/* **********************************************************
+    Phone detection (smaller mobile devices)
+    Distinguishes phones from tablets
+* **********************************************************/
   phone() {
     if (this._isPhoneCache !== null) {
       return this._isPhoneCache;
@@ -179,10 +179,10 @@ class Detector {
     return this._isPhoneCache;
   }
 
-  /**
-   * Tablet detection
-   * Devices that are mobile but not phones
-   */
+/* **********************************************************
+    Tablet detection
+    Devices that are mobile but not phones
+* **********************************************************/
   tablet() {
     if (this._isTabletCache !== null) {
       return this._isTabletCache;
@@ -207,9 +207,9 @@ class Detector {
     return this._isTabletCache;
   }
 
-  /**
-   * IE11 detection (legacy support)
-   */
+/* **********************************************************
+    IE11 detection (legacy support)
+* **********************************************************/
   ie11() {
     return (
       ('-ms-scroll-limit' in document.documentElement.style &&
@@ -218,10 +218,10 @@ class Detector {
     );
   }
 
-  /**
-   * Get device type as string
-   * Returns: 'desktop', 'phone', 'tablet', or 'unknown'
-   */
+/* **********************************************************
+    Get device type as string
+    Returns: 'desktop', 'phone', 'tablet', or 'unknown'
+* **********************************************************/
   getDeviceType() {
     if (this.phone()) {
       return 'phone';
@@ -235,10 +235,10 @@ class Detector {
     return 'unknown';
   }
 
-  /**
-   * Get browser info
-   * Returns object with browser name and version
-   */
+/* **********************************************************
+    Get browser info
+    Returns object with browser name and version
+* **********************************************************/
   getBrowserInfo() {
     const ua = this.ua;
     let browser = 'Unknown';
@@ -284,10 +284,10 @@ class Detector {
     return { browser, version };
   }
 
-  /**
-   * Get OS info
-   * Returns object with OS name and version
-   */
+/* **********************************************************
+    Get OS info
+    Returns object with OS name and version
+* **********************************************************/
   getOSInfo() {
     const ua = this.ua;
     const platform = this.platform;
@@ -333,9 +333,9 @@ class Detector {
     return { os, version };
   }
 
-  /**
-   * Check if device supports touch
-   */
+/* **********************************************************
+    Check if device supports touch
+* **********************************************************/
   isTouchDevice() {
     return (
       this.maxTouchPoints > 0 ||
@@ -344,9 +344,9 @@ class Detector {
     );
   }
 
-  /**
-   * Get screen info
-   */
+/* **********************************************************
+    Get screen info
+* **********************************************************/
   getScreenInfo() {
     return {
       width: window.innerWidth,
@@ -359,18 +359,18 @@ class Detector {
     };
   }
 
-  /**
-   * Clear detection cache (useful after orientation change)
-   */
+/* **********************************************************
+    Clear detection cache (useful after orientation change)
+* **********************************************************/
   clearCache() {
     this._isMobileCache = null;
     this._isPhoneCache = null;
     this._isTabletCache = null;
   }
 
-  /**
-   * Get complete device info
-   */
+/* **********************************************************
+    Get complete device info
+* **********************************************************/
   getDeviceInfo() {
     return {
       type: this.getDeviceType(),
@@ -588,8 +588,8 @@ const getInlineOption = (el, key, fallback) => {
 };
 
 /* **********************************************************
- 𝘾𝙇𝘼𝙎𝙎𝙀𝙎 𝘼𝙉𝘿 𝙀𝙑𝙀𝙉𝙏
-Manipulating CSS classes and custom events.
+   𝘾𝙇𝘼𝙎𝙎𝙀𝙎 𝘼𝙉𝘿 𝙀𝙑𝙀𝙉𝙏
+   Manipulating CSS classes and custom events.
 * **********************************************************/
 const addClasses = (node, classes) =>
   classes && classes.forEach(className => node.classList.add(className));
@@ -824,7 +824,6 @@ let options = {
   duration: 400,
   disable: false,
   once: false,
-  mirror: false,
   anchorPlacement: 'top-bottom',
   startEvent: 'DOMContentLoaded',
   animatedClassName: 'viks-animate',
@@ -951,25 +950,30 @@ const init = function init(settings) {
   return $VIKSElements;
 };
 
-/**
- * Public API
- */
+/* **********************************************************
+   𝙋𝙐𝘽𝙇𝙄𝘾 𝘼𝙋𝙄
+   The interface used can be by developers!
+* **********************************************************/
 const VIKS = {
   init,
   refresh,
   refreshHard
 };
 
-/**
- * module system
- */
+/* **********************************************************
+  𝙈𝙊𝘿𝙐𝙇𝙀 𝙎𝙔𝙎𝙏𝙀𝙈
+  This code is to make VIKS compatible with the 
+  Node.js/CommonJS module system!
+* **********************************************************/
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = VIKS;
 }
 
-/**
- * Global variable
- */
+/* **********************************************************
+  𝙂𝙇𝙊𝘽𝘼𝙇 𝙑𝘼𝙍𝙄𝘼𝘽𝙇𝙀
+  This code makes VIKS available as a global 
+  variable in the browser!
+* **********************************************************/
 if (typeof window !== 'undefined') {
   window.viks = VIKS;
 }
