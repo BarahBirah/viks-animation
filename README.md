@@ -1218,17 +1218,46 @@ VIKS.init({
 
 ---
 
-## 🌐 Browser Support
+## BROWSER SUPPORT
 
-### Modern Browsers
-
-| Browser | Version | Status |
-|---------|---------|--------|
-| Chrome | Latest & last 2 | ✅ Full support |
-| Firefox | Latest & last 2 | ✅ Full support |
-| Safari | Latest & last 2 | ✅ Full support |
-| Edge | Latest & last 2 | ✅ Full support |
-| Opera | Latest & last 2 | ✅ Full support |
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />
+      <br>Chrome
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />
+      <br>Firefox
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />
+      <br>Safari
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />
+      <br>Edge
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />
+      <br>Opera
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Latest ✔</td>
+    <td align="center">Latest ✔</td>
+    <td align="center">Latest ✔</td>
+    <td align="center">Latest ✔</td>
+    <td align="center">Latest ✔</td>
+  </tr>
+  <tr>
+    <td align="center">Last 2 versions</td>
+    <td align="center">Last 2 versions</td>
+    <td align="center">Last 2 versions</td>
+    <td align="center">Last 2 versions</td>
+    <td align="center">Last 2 versions</td>
+  </tr>
+</table>
 
 ### Mobile Browsers
 
@@ -1573,15 +1602,12 @@ SOFTWARE.
 
 ---
 
-## 🌐 Links & Resources
+## LINK & RESOURCE
 
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-Visit_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://viksanimation.my.id)
 [![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MeViksry/viks-animation)
-
-### Connect with Me
-
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kingvikvik25@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MeViksry)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/meviksry)
@@ -1604,7 +1630,7 @@ Special thanks to:
 
 ## 📝 Changelog
 
-### Version 2.3.1 (Current)
+### Version 1.0.2 (Current)
 
 **Features:**
 - ✨ Inline configuration syntax
@@ -1612,19 +1638,6 @@ Special thanks to:
 - 🔄 MutationObserver auto-refresh
 - 🎯 Custom event system
 - ⚙️ Flexible configuration system
-
-**Animations:**
-- 9 Fade variants
-- 10 Zoom variants
-- 4 Slide directions
-- 4 Flip directions
-- 21 Easing functions
-
-**Performance:**
-- Throttled scroll events
-- Debounced resize events
-- Cached element queries
-- GPU-accelerated animations
 
 ---
 
