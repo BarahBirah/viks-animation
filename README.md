@@ -31,7 +31,7 @@
 - [Advanced Features](#-advanced-features)
 - [Performance](#-performance)
 - [Troubleshooting](#-troubleshooting)
-- [Browser Support](#-browser-support)
+- [Browser Support](#-BROWSER-SUPPORT)
 - [Contributing](#-contributing)
 - [License](#-license)
 
