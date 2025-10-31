@@ -9,8 +9,6 @@
 
 **Modern scroll-triggered animations with inline configuration — Zero dependencies**
 
-[Quick Start](#-quick-start) • [Documentation](#-documentation) • [Examples](#-examples) • [API](#-api-reference)
-
 </div>
 
 ---
